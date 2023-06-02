@@ -5,10 +5,8 @@ const avisoCookies = document.querySelector('#aviso-cookies');
 const fondoAvisoCookies = document.querySelector('#fondo-aviso-cookies');
 
 
-document.addEventListener('DOMContentLoaded',()=>{
-    avisoCookies.classList.add('activo');
-    fondoAvisoCookies.classList.add('activo');
-})
+avisoCookies.classList.add('activo');
+fondoAvisoCookies.classList.add('activo');
 
 
 
