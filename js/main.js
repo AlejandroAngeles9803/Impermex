@@ -4,17 +4,25 @@ const botonAceptarCookies = document.querySelector('#btn-aceptar-cookies');
 const avisoCookies = document.querySelector('#aviso-cookies');
 const fondoAvisoCookies = document.querySelector('#fondo-aviso-cookies');
 
+document.addEventListener('DOMContentLoaded', () => {
 
-avisoCookies.classList.add('activo');
-fondoAvisoCookies.classList.add('activo');
+    setTimeout(() => {
+        avisoCookies.classList.add('activo');
+        fondoAvisoCookies.classList.add('activo');
 
 
-
-botonAceptarCookies.addEventListener('click', () => {
-    avisoCookies.classList.remove('activo');
-    fondoAvisoCookies.classList.remove('activo');
-
+    }, 3000);
+    
+    botonAceptarCookies.addEventListener('click', () => {
+        avisoCookies.classList.remove('activo');
+        fondoAvisoCookies.classList.remove('activo');
+    
+    });
 });
+
+
+
+
 us.addEventListener('click', () => {
     const secUno = document.querySelector('#secUno');
     document.querySelector('#secUno').innerHTML = "";
