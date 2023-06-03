@@ -279,7 +279,7 @@ footer{
 }
 
 .aviso-cookies {
-	display: none;
+	display: block;
 	background: #fff;
 	padding: 20px;
 	width: calc(100% - 40px);
@@ -296,7 +296,7 @@ footer{
 }
 
 .aviso-cookies.activo {
-	display: block;
+	display: none;
 }
 
 .aviso-cookies .galleta {
@@ -342,7 +342,7 @@ footer{
 }
 
 .fondo-aviso-cookies {
-	display: none;
+	display: block;
 	background: rgba(0,0,0,.20);
 	position: fixed;
 	z-index: 99;
@@ -353,5 +353,5 @@ footer{
 }
 
 .fondo-aviso-cookies.activo {
-	display: block;
+	display: none;
 }
