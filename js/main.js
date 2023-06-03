@@ -1,29 +1,11 @@
 const mx = document.querySelector('#mex');
 const us = document.querySelector('#us');
-
-const avisoCookies = document.getElementById('aviso-cookies');
-const fondoAvisoCookies = document.getElementById('fondo-aviso-cookies');
-
-document.addEventListener('DOMContentLoaded',()=>{
-    avisoCookies.insertAdjacentHTML('beforeend', 
-    
-    
-        `
-        <img class="galleta" src="./img/cookie.svg" alt="Galleta">
-        <h3 class="titulo">Aviso de Privacidad</h3>
-        <p class="parrafo">Al estar de acuerdo, aceptas nuestro terminos de servicio.</p>
-        <button class="boton" onclick="botonAceptarCookies()" id="btn-aceptar-cookies">De acuerdo</button>
-        <a class="enlace" href="aviso-privacidad.html">Aviso de Privacidad</a>
-        
-        `
-
-    
-    
-    )
+const avisoCookies = document.querySelector('#aviso-cookies');
+const fondoAvisoCookies = document.querySelector('#fondo-aviso-cookies');
 
 
-});
-const botonAceptarCookies =  () => {
+
+const botonAceptarCookies=  () => {
     avisoCookies.classList.add('activo');
     fondoAvisoCookies.classList.add('activo');
 };
